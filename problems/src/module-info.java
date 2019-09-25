@@ -1,0 +1,3 @@
+module problems {
+    requires dataStructures;
+}

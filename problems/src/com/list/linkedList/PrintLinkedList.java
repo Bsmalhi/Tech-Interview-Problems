@@ -1,4 +1,4 @@
-package com.listProblems;
+package com.list.linkedList;
 
 import com.list.LinkedList;
 

@@ -26,17 +26,19 @@ public class LinkedList {
         }
     }
 
-    public void swapPairs(){
-        ListNode curr = head;
-        while(curr != null && curr.next != null){
-            ListNode temp = curr;
-            curr = curr.next;
-
-
-        }
+    public ListNode insertDummyValue(List<Integer> integers) {
+        integers.stream().forEach(this::insert);
+        return head;
     }
 
-    public void insertDummyValue(List<Integer> integers) {
-        integers.stream().forEach(this::insert);
+    public void printList(ListNode result) {
+        ListNode curr = result;
+        while(curr != null){
+            if(curr.next != null)
+                System.out.print( curr.val+ " -> ");
+            else
+                System.out.print( curr.val);
+            curr = curr.next;
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.recursion.leetcode;
+package com.leetcode.math;
 
 import java.util.HashMap;
 

@@ -13,7 +13,7 @@ class KClosestPointstoOrigin{
     );
       for(int[][] point: points){
         pq.offer(point);
-        if(pq.size() > k)
+        if(pq.size() > k) // we want a maxHeap bcoz we want to pop the larget Euclidean distance from the center first and only keep k closest to origin.
           pq.poll();
       }
       int [][] result = new result[k][points[0].length];

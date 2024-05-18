@@ -14,10 +14,11 @@ class KthLargest {
       }
     }
     private int add(int num){
-        if(pq.size() >= k){ // I have to limit pq size to top 3 elements only
+        if(pq.size() < k){ 
+            pq.offer()
+        } else if(pq.peek() < num){ // I have to limit pq size to top 3 elements only
             pq.poll();
-        } else if(pq.peek() < num){
-          pq.offer(num);
+            add(num);
         }
         return pq.peek();
     }

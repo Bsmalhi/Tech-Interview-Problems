@@ -6,6 +6,7 @@ class Permutations{
   Output: [[1,1,2],[1,2,1],[2,1,1]]
   */
   public List<List<Integer>> permute(int[] nums){
+    Arrays.sort(nums);
     List<List<Integer>> result = new ArrayList<>();
     helperDfs(nums, result, new ArrayList<Integer>(), new boolean[nums.length]);
     return result;

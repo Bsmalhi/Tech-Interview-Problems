@@ -1,4 +1,17 @@
 class Knapsack {
+    /*
+    0/1 Knapsack Problem:
+    Each item can either be included (1) or excluded (0) from the knapsack.
+    The objective is to maximize the total value of the items included in the knapsack without exceeding its weight capacity.
+    
+    Input:
+    profit = [4, 4, 7, 1]
+    weight = [5, 2, 3, 1]
+    capacity = 8
+
+    Output:
+    12
+    */
     public int maximumProfit(List<Integer> profit, List<Integer> weight, int capacity) {
         int M = profit.size(), N = capacity;
         int [][] cache = new int[M+1][N+1];

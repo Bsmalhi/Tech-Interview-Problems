@@ -7,7 +7,7 @@ class CountGoodNodes{
     if(root == null)
       return 0;
     int count = 0;
-    if(root.val > maxVal){
+    if(root.val >= maxVal){
       count = 1;
       maxVal = root.val;
     }

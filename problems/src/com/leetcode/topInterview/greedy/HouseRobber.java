@@ -4,6 +4,11 @@ class HouseRobber{
   The houses are arranged in a straight line, i.e. the ith house is the neighbor of the (i-1)th and (i+1)th house.
   You are planning to rob money from the houses, but you cannot rob two adjacent houses because the security system 
   will automatically alert the police if two adjacent houses were both broken into.
+         // [1, 2, 3, 1]
+        // n = 1 temp = 1 , rob1 = 0, rob2 = 1
+        // n = 2 temp = 2, rob1 = 1, rob2 = 2
+        // n = 3 temp = 4, rob1 = 2, rob2 = 4
+        // n = 1 temp = 4, rob1 = 4, rob2 = 4;
   */
   public int rob(int[] nums){
     int rob1 = 0, rob2 = 0;

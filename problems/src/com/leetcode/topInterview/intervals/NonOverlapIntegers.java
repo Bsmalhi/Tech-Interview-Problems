@@ -12,7 +12,7 @@ class NonOverlapIntegers {
           prevEnd = intervals[i][1];
         } else { // overlapping
           minCount++;
-          prevEnd = Math.min(prevEnd, intervals[i][1]);
+          prevEnd = Math.min(prevEnd, intervals[i][1]); // keeping the minimum prevEnd ensures that we only remove minimum intervals from intervals list
         }
       }
       return minCount;

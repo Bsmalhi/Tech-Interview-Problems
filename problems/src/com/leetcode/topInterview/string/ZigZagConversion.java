@@ -1,4 +1,8 @@
 class ZigZagConversion{
+/*
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this
+And then read line by line: "PAHNAPLSIIGYIR"
+*/
   public String zigZag(String s, int numRows){
     if(numRows == 1)
       return s; // bcoz zig zag can't be done

@@ -32,7 +32,10 @@ class Solution {
           queue.offer(new Pair<>(node.right, column + 1));
         }
       }
-      List<Integer> keys = new ArrayList<>();
+      List<Integer> keys = new ArrayList<>(tableMap.keySet());
+      Collections.sort(keys);// sort so that leftmost column get added to result first
+      for(Integer key: keys)
+          result.add(tableMap.get(key));
       return result;
     }
 }
